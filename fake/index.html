@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>南昌大学综合教务管理系统-强智科技</title> 
+<style>
+body,div,dl,dt,p,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td { 
+padding:0; 
+margin:0 auto; font-family:"微软雅黑"}
+.top{ height:150px; padding-left:85px;}
+.middle{ height:296px;background:url(back.gif) no-repeat; height:296px;position:relative; width:955px;}
+.dl{width:312px;height:230px;position:absolute;right:60px;top:30px}
+.dlti{font-size:24px;color:#333;position:absolute;top:5px;
+}
+.dlmi{ float:left; width:312px; line-height:45px;font-size:17px;color:#333;position:absolute;top:70px;}
+.dlmi input{ float:right; height:28px; width:228px; border:1px solid #DDDDDD;position:absolute;left:77px;}
+.dlj{ color:#666;position:absolute;top:180px;left:77px;width: 113px;}
+.dlau{position:absolute;left:205px;top:171px;height:45px;width:45px;font-size:16px;
+}
+.dlau a{ background:url(login.gif) no-repeat; display:block; width:45px; height:45px;}
+.dlau1{position:absolute;left:263px;top:171px;height:45px;width:45px;font-size:16px;}
+.dlau1 a{ background:url(help.gif) no-repeat; display:block; width:45px; height:45px;}
+.end{position:absolute;font-size:15px;color:#999;float:left;width:100%;top: 304px;
+}
+.end span{float:right;}
+.end span a{ color:#999; text-decoration:none;}
+ </style>
+</head>
+<body>
+<form action="/jsxsd/xk/LoginToXk" method="post" id="Form1" name="Form1" onsubmit="return submitForm1();">
+<div class="wapbg">
+<div class="wap">
+<div class="top"><img style="padding-top:80px" src="top.png" width="474px" height="61px" /></div>
+<div class="middle">
+<div class="dl"><div class="dlti">用户登录</div>
+<div class="dlmi">
+	<p>用户名:</p>
+	<input type="text" id="userAccount" name="userAccount" value="" style="position:absolute; top:7px;"/>
+	<p>密码:</p>
+	<input type="password" id="userPassword" name="userPassword"value="" style="position:absolute; top:54px;"/> 
+	<input type="hidden" id="encoded" name="encoded" />
+	<br/>
+	<font color="red"></font>
+ </div>
+<div class="dlj" style="display:none;"><input style="margin-right:5px;" name="jzmmid" id="jzmmid" type="checkbox" value="1"  />记住用户名</div>
+<a href="menu.html" class="dlau" style=" border: 0px;background: url(login.gif) no-repeat;"/></a>
+
+<div class="dlau1"><a href="#"></a>
+</div>
+</div>
+<div class="end">
+<!-- #14856 Begin-->
+<table border="0" width="100%">
+	<tr>
+		<td align="left" style="width:40%">湖南强智科技发展有限公司 版权所有&nbsp;&nbsp;
+			<span><a href="/jsxsd/enteruserid.jsp" target="_blank">找回密码</a></span>
+		</td>
+		<td style="width:60%">
+			<span><a href="#">隐私声明</a>|<a href="#">设为首页</a></span>
+		</td>
+	</tr>
+</table>
+<!-- #14856 End-->
+</div>
+</div></div></div>
+</form>
+
+</body>
+<script language="javascript">
+	//init();//0001571
+	/*
+	function init(){
+		String login_username = getCookie("login_username");
+		if(login_username != ""){
+			document.getElementById("Form1").USERNAME.value = login_username;
+		}		
+	}*/
+	function submitForm1(){  
+		try{
+			var xh = document.getElementById("userAccount").value;
+			var pwd = document.getElementById("userPassword").value; 
+			if(xh==""){
+				alert("用户名不能为空！");
+				return false;
+			}
+			if(pwd==""){
+				alert("密码不能为空！");
+				return false;
+			} 
+			var account = encodeInp(xh);
+			var passwd = encodeInp(pwd);
+			var encoded = account+"%%%"+passwd;
+			document.getElementById("encoded").value = encoded;
+			var jzmmid = document.getElementById("Form1").jzmmid;  
+			return true;
+		}catch(e){
+			alert(e.Message);
+			return false;
+		}
+	}
+	
+	//根据用户帐号选择登录服务器
+	function selectServer(uName){
+		var enableServers = true;//是否启用多服务器 true/false
+		var serversArray = new Array();//服务器列表
+
+		
+			serversArray[0] = "http://222.204.2.103:80/jsxsd/";
+		
+			serversArray[1] = "http://222.204.2.108:80/jsxsd/";
+		
+			serversArray[2] = "http://222.204.2.109:80/jsxsd/";
+		
+			serversArray[3] = "http://222.204.2.107:80/jsxsd/";
+		
+			serversArray[4] = "http://222.204.2.110:80/jsxsd/";
+		
+			serversArray[5] = "http://218.64.56.18:82/jsxsd/";
+		
+			serversArray[6] = "http://218.64.56.18:81/jsxsd/";
+		
+			serversArray[7] = "http://222.204.2.108:81/jsxsd/";
+		
+	
+		var loginUrl = "xk/LoginToXk";
+		if(enableServers == true){
+			if(!/[^\d]/.test(uName)){//必须为数字
+				var modVal = eval(uName % serversArray.length);
+				loginUrl = serversArray[modVal] + loginUrl;
+			}else{
+				loginUrl = serversArray[0] + loginUrl;
+			}
+		}else{
+			loginUrl = "/jsxsd"+ loginUrl;
+		}
+		return loginUrl;
+	}	
+</script>
+</html>
+

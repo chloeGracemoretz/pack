@@ -1,0 +1,303 @@
+
+<html>
+
+
+
+
+<head id="headerid1">
+ <meta charset="utf-8">
+	<title>学生个人中心</title>	
+	<link href="common.css" rel="stylesheet" type="text/css" />
+<link href="blue.css" rel="stylesheet" type="text/css" id="link_theme" />
+<link href="workstation.css" rel="stylesheet" type="text/css" /> 
+</head>
+<iframe id="notSession" name="notSession" style="display: none;" src=""></iframe>
+
+
+
+<style type="text/css">
+body {color:#FFF;font-size: 14px;font-family: "微软雅黑";}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,{ padding:0; margin:0;}
+font{ color:#FFF;}
+.wap{position:relative;height:450px; width:910px;margin:0 auto;}
+.block1{width:265px; height:287px; background:#09619F;}
+.block1 img{position:absolute;top:92px;left:28px;}
+.block1tex{position:absolute;top:169px;left:33px;}
+.block1text{position:absolute;top:120px;left:135px;width: 150px;height:73px;line-height:21px;}
+.block1pc{background:#2271A9;position:absolute;width:90px;height:117px;left: 141px;top:31px;}
+.block1pc img{position:absolute;width:90px;height:117px;left:0;top:0;}
+
+.block2{position:absolute;width:153px;height:287px;background:#4FB5C7;left:270px;top:0px;}
+.block2 img{position:absolute;top:92px;left:43px;}
+.block2tex{position:absolute;top:164px;left:48px;}
+
+.block3{position:absolute;width:173px;height:141px;background:#1978D8;left:428px;top:0px;}
+.block3 img{position:absolute;top:29px;left:38px;}
+.block3tex{position:absolute;top:91px;left:58px;}
+
+.block4{position:absolute;width:173px;height:141px;background:#90A8E3;left:428px;top:146px;}
+.block4 img{position:absolute;top:21px;left:48px;}
+.block4tex{position:absolute;top:91px;left:57px;}
+
+.block5{position:absolute;width:304px;height:141px;background:#DB6987;right:0px;top:0px;}
+.block5 img{position:absolute;top:28px;left:21px;}
+.block5tex{position:absolute;top:96px;left:35px;}
+.block5text{line-height:21px;position:absolute;top:30px;left:112px;width: 172px;height:87px;}
+
+.block6{position:absolute;width:304px;height:141px;background:#8E7AAA;right:0px;top:146px;}
+.block6 img{position:absolute;top:12px;left:21px;}
+.block6tex{position:absolute;top:96px;left:35px;}
+.block6text{line-height:21px;position:absolute;top:30px;left:112px;width: 172px;height:87px;}
+
+.block7{position:absolute;width:130px;height:138px;background:#187D9A;top:292px;}
+.block7 img{position:absolute;top:26px;left:30px;}
+.block7tex{position:absolute;top:94px;left:36px;}
+
+.block8{position:absolute;width:130px;height:138px;background:#A0CF41;left:135px;top:292px;}
+.block8 img{position:absolute;top:26px;left:30px;}
+.block8tex{position:absolute;top:94px;left:35px;}
+
+.block9{position:absolute;width:153px;height:138px;background:#EAAF76;left:270px;top:292px;}
+.block9 img{position:absolute;top:26px;left:41px;}
+.block9tex{position:absolute;top:94px;left:46px;}
+
+.block10{position:absolute;width:173px;height:138px;background:#88BAD9;left:428px;top:292px;}
+.block10 img{position:absolute;top:22px;left:51px;}
+.block10tex{position:absolute;top:94px;left:53px;}
+
+.block11{position:absolute;width:149px;height:138px;background:#B69CCC;left:606px;top:292px;}
+.block11 img{position:absolute;top:19px;left:45px;}
+.block11tex{position:absolute;top:94px;left:47px;}
+
+.block12{position:absolute;width:149px;height:138px;background:#09619F;right:0px;top:292px;}
+.block12 img{position:absolute;top:26px;left:45px;}
+.block12tex{position:absolute;top:94px;left:46px;}
+a {color:#FFFFFF;}
+
+</style>
+
+<body>
+
+
+
+
+
+
+
+<div class="Nsb_pw">
+  <div class="Nsb_top">
+    <div class="Nsb_top_logo"><table border="0" cellpadding="0" cellspacing="0"><tr><td height="75" valign="middle"><img style="display:;" id="imgLogo" src="top.png
+    " /></td></tr></table></div>
+    <div class="Nsb_top_menu">        
+        <div id="Top1_divLoginName" class="Nsb_top_menu_nc" style="color: #000000;">黄炜晨(6103115151)</div>
+        <ul>
+            <li><a id="TopUserSetting" info="个人设置" href="#" class="Nsb_top_menu_id"><img src="02.jpeg" id="Top1_imgTopSmallUserPhoto" /></a></li>
+            <span></span>
+                          
+            
+            <li><a id="TopTheme" info="切换主题" href="#" class="Nsb_top_menu_style" onclick="changeDisplay('divTopTheme')"></a></li>
+            <span id="Top1_LBackManageSpliter"></span>
+            <span id="Top1_LExitSpliter"></span>
+            <li id="Top1_LBackManage">
+            	<a info="个人设置" href="#" class="Nsb_top_menu_options"></a>
+            </li>
+            <li id="Top1_LExit"><a info="退出" class="Nsb_top_menu_exit"></a></li>
+        </ul>            
+     </div>   
+     <div id="divTopTheme" group="topDiv" style="display:none;z-index:10000">      
+        <div class="Nsb_top_c Nsb_top_c3">
+          <ul>
+            <li id="theme_blue" theme="blue" index="1" class="Nsb_top_c3_11" onclick="javascript:changeTheme('/jsxsd','blue',this);"></li>
+            <li id="theme_green" theme="green" index="2" class="Nsb_top_c3_2"  onclick="javascript:changeTheme('/jsxsd','green',this);"></li>
+            <li id="theme_orange" theme="orange" index="3" class="Nsb_top_c3_3" onclick="javascript:changeTheme('/jsxsd','orange',this);"></li>
+            <li id="theme_red" theme="red" index="4" class="Nsb_top_c3_4"  onclick="javascript:changeTheme('/jsxsd','red',this);"></li>
+            <li id="theme_purple" theme="purple" index="5" class="Nsb_top_c3_5" onclick="javascript:changeTheme('/jsxsd','purple',this);"></li>
+            <li id="theme_gray" theme="gray" index="6" class="Nsb_top_c3_6"  onclick="javascript:changeTheme('/jsxsd','gray',this);"></li>
+          </ul>
+        </div>
+     </div>
+   </div>
+</div>
+<div class="Nsb_menu_pw">
+  <div class="Nsb_pw">
+    <div id="divFirstMenuClass" class="Nsb_menu menu_cn" style="background-color:#4571CB;width:100%;height: 38px; ">
+      <ul>         
+         <li class="Nsb_menu_li_now" title="首页">
+         	<a class="Nsb_menu_li_h" id="homepage"><span></span></a>
+         </li>
+         
+         	<li title="我的桌面">
+         		<a id="calender_user_schedule" href="#" >我的桌面</a>
+         	</li>
+         
+         	<li title="学籍成绩">
+         		<a id="calender_user_schedule" href="#">学籍成绩</a>
+         	</li>
+         
+         	<li title="培养管理">
+         		<a id="calender_user_schedule" href="#">培养管理</a>
+         	</li>
+         
+         	<li title="考试报名">
+         		<a id="calender_user_schedule" href="#">考试报名</a>
+         	</li>
+         
+         	<li title="教学评价">
+         		<a id="calender_user_schedule" href="#">教学评价</a>
+         	</li>
+         
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="h"></div>
+<div class="h"></div>
+<!-- 学生 --> 
+<div class="wap">
+ <div class="block1">
+    <div>
+    	<img src="tp1.png" width="72" height="64" />
+    </div>
+    <div class="block1tex">个人信息</div>
+    <div class="block1text"> 
+    	姓名：黄炜晨<br/> 
+    	学号：6103115151<br/>
+    </div>
+
+  </div>
+  
+  
+	  <a href="#">
+	  	<div class="block2"> 
+	  		<div>
+	  			<img src="tp2.png" width="65" height="65" />
+	  		</div>
+			<div class="block2tex">选课中心</div>
+		</div>
+	  </a>
+  
+  
+  
+  
+	  <a href="#">
+	  	<div class="block3"> 
+	  		<div>
+	  			<img src="tp3.png" width="92" height="55" />
+	  		</div>
+			<div class="block3tex">学生评教</div>
+		</div>
+	  </a>
+  
+  
+  
+  
+	  <a href="#">
+	  	<div class="block4"> 
+	  		<div>
+	  			<img src="tp4.png" width="71" height="62" />
+	  		</div>
+			<div class="block4tex">培养方案</div>
+		</div>
+	  </a>
+  
+  
+  
+	  <a href="#">
+	  	<div class="block5"> 
+	  		<div>
+	  			<img src="tp5.png" width="80" height="57" />
+	  		</div>
+			<div class="block5tex">已收留言</div>
+			<div class="block5text" id="grxx"></div>
+		</div>
+	  </a>
+  
+  
+  
+  
+	  <a href="#">
+	  	<div class="block6"> 
+	  		<div>
+	  			<img src="tp6.png" width="67" height="79" />
+	  		</div>
+			<div class="block6tex">已收公告</div>
+			<div class="block6text" id="ggtz"></div>
+		</div>
+	  </a>
+  
+  
+  
+  
+	  <a href="#">
+	  	<div class="block7"> 
+	  		<div>
+	  			<img src="tp7.png" width="66" height="59" />
+	  		</div>
+			<div class="block7tex">课程成绩查询</div> 
+		</div>
+	  </a>
+  
+  
+  
+	  <a href="#">
+	  	<div class="block8"> 
+	  		<div>
+	  			<img src="tp8.png" width="64" height="60" />
+	  		</div>
+			<div class="block8tex">教学周历</div> 
+		</div>
+	  </a>
+  
+  
+  
+	  <a href="#">
+	  	<div class="block9"> 
+	  		<div>
+	  			<img src="tp9.png" width="66" height="66" />
+	  		</div>
+			<div class="block9tex">授课计划查询</div> 
+		</div>
+	  </a>
+  
+  
+  
+	  <a href="search.html">
+	  	<div class="block10"> 
+	  		<div>
+	  			<img src="tp10.png" width="71" height="69" />
+	  		</div>
+			<div class="block10tex">考试成绩</div> 
+		</div>
+	  </a>
+  
+  
+  
+	  <a href="#">
+	  	<div class="block11"> 
+	  		<div>
+	  			<img src="tp11.png" width="62" height="73" />
+	  		</div>
+			<div class="block11tex">学籍卡片</div> 
+		</div>
+	  </a>
+  
+ 
+   
+	  <a href="#">
+	  	<div class="block12"> 
+	  		<div>
+	  			<img src="tp12.png" width="55" height="67" />
+	  		</div>
+			<div class="block12tex">社会考试报名</div> 
+		</div>
+	  </a>
+   
+  
+</div>
+
+
+<div id="Footer1_divCopyright" class="Nsb_pw" style="display:;">
+  <div class="Nsb_rights">Copyright (C) 湖南强智科技发展有限公司 2003-2013 All Rights Reserved 湘ICP 备12010071号</div>
+</div>
+</body>
+</html>

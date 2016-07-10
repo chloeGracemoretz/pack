@@ -1,0 +1,361 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head id="headerid1">
+	<base target='_self'>
+	<title>学生个人考试成绩</title>	
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="keywords" content="湖南强智科技教务系统">
+	<meta http-equiv="description" content="湖南强智科技教务系统">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+<link href="common.css" rel="stylesheet" type="text/css" />
+<link href="blue.css" rel="stylesheet" type="text/css" id="link_theme" />
+<link href="workstation.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+
+
+
+
+
+
+
+<div class="Nsb_pw">
+  <div class="Nsb_top">
+    <div class="Nsb_top_logo"><table border="0" cellpadding="0" cellspacing="0"><tr><td height="75" valign="middle"><img style="display:;" id="imgLogo" src="01.gif" /></td></tr></table></div>
+    <div class="Nsb_top_menu">        
+        <div id="Top1_divLoginName" class="Nsb_top_menu_nc" style="color: #000000;">黄炜晨(6103115151)</div>
+        <ul>
+            <li><a id="TopUserSetting" info="个人设置" href="#" class="Nsb_top_menu_id"><img src="02.jpeg" id="Top1_imgTopSmallUserPhoto" /></a></li>
+            <span></span>
+                          
+            
+            <li><a id="TopTheme" info="切换主题" href="#" class="Nsb_top_menu_style" onclick="changeDisplay('divTopTheme')"></a></li>
+            <span id="Top1_LBackManageSpliter"></span>
+            <span id="Top1_LExitSpliter"></span>
+            <li id="Top1_LBackManage">
+            	<a info="个人设置" href="/jsxsd/grsz/grsz_xggrxx.do?Ves632DSdyV=NEW_XSD_WDZM" class="Nsb_top_menu_options"></a>
+            </li>
+            <li id="Top1_LExit"><a info="退出" href="javascript:Logout('/jsxsd');"   class="Nsb_top_menu_exit"></a></li>
+        </ul>            
+     </div>   
+     <div id="divTopTheme" group="topDiv" style="display:none;z-index:10000">      
+        <div class="Nsb_top_c Nsb_top_c3">
+          <ul>
+            <li id="theme_blue" theme="blue" index="1" class="Nsb_top_c3_11" onclick="javascript:changeTheme('/jsxsd','blue',this);"></li>
+            <li id="theme_green" theme="green" index="2" class="Nsb_top_c3_2"  onclick="javascript:changeTheme('/jsxsd','green',this);"></li>
+            <li id="theme_orange" theme="orange" index="3" class="Nsb_top_c3_3" onclick="javascript:changeTheme('/jsxsd','orange',this);"></li>
+            <li id="theme_red" theme="red" index="4" class="Nsb_top_c3_4"  onclick="javascript:changeTheme('/jsxsd','red',this);"></li>
+            <li id="theme_purple" theme="purple" index="5" class="Nsb_top_c3_5" onclick="javascript:changeTheme('/jsxsd','purple',this);"></li>
+            <li id="theme_gray" theme="gray" index="6" class="Nsb_top_c3_6"  onclick="javascript:changeTheme('/jsxsd','gray',this);"></li>
+          </ul>
+        </div>
+     </div>
+   </div>
+</div>
+<div class="Nsb_menu_pw">
+  <div class="Nsb_pw">
+    <div id="divFirstMenuClass" class="Nsb_menu menu_cn">
+      <div style="background-color: #4571CB ;width:100% ;height:38px">
+      <ul >      
+         
+         <li class="Nsb_menu_li_now" title="首页" >
+         	<a class="Nsb_menu_li_h" id="homepage" href="/jsxsd/framework/main.jsp"><span></span></a>
+         </li>
+         
+         	<li title="我的桌面">
+         		<a id="calender_user_schedule" href="/jsxsd/jxzl/jxzl_query?Ves632DSdyV=NEW_XSD_WDZM" style="color:white">我的桌面</a>
+         	</li>
+         
+         	<li title="学籍成绩">
+         		<a id="calender_user_schedule" href="/jsxsd/xsxj/xjxxgl.do?Ves632DSdyV=NEW_XSD_XJCJ" style="color:white">学籍成绩</a>
+         	</li>
+         
+         	<li title="培养管理">
+         		<a id="calender_user_schedule" href="/jsxsd/pyfa/pyfadg_query?Ves632DSdyV=NEW_XSD_PYGL" style="color:white">培养管理</a>
+         	</li>
+         
+         	<li title="考试报名">
+         		<a id="calender_user_schedule" href="/jsxsd/xsks/xsksap_query?Ves632DSdyV=NEW_XSD_KSBM" style="color:white">考试报名</a>
+         	</li>
+         
+         	<li title="教学评价">
+         		<a id="calender_user_schedule" href="/jsxsd/xspj/xspj_find.do?Ves632DSdyV=NEW_XSD_JXPJ" style="color:white">教学评价</a>
+         	</li>
+         
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Nsb_pw">   
+	<br/>
+	<div class="Nsb_r_title"><a href="/jsxsd/framework/main.jsp"">首页</a> » 考试成绩 » 课程成绩查询 » 查询列表</div>
+	<input type="button" id="btn_back" class="button" value="返 回" onclick="window.location.href='/jsxsd/kscj/cjcx_query';"/>
+	
+	<br />
+	
+	查询条件：开课时间【2015-2016-2】&nbsp;&nbsp; 
+	<br />
+
+	一共需要修读<span>33</span>学分，
+				  已修读<span>33</span>学分，
+				  还需修读<span>0</span>学分，
+				  平均学分绩点<span>0。</span>
+				
+	<table id="dataList" width="100%" border="0" cellspacing="0" cellpadding="0" class="Nsb_r_list Nsb_table">
+		<tr>
+			<th class="Nsb_r_list_thb" style="width: 35px;">序号</th>
+			<th class="Nsb_r_list_thb" style="width: 140px;">开课学期</th>
+			<th class="Nsb_r_list_thb" style="width: 110px;">课程编号</th>
+			<th class="Nsb_r_list_thb">课程名称</th>
+			<th class="Nsb_r_list_thb" style="width: 60px;">成绩</th>
+			<th class="Nsb_r_list_thb" style="width: 50px;">学分</th>
+			<th class="Nsb_r_list_thb" style="width: 50px;">总学时</th>
+			<th class="Nsb_r_list_thb" style="width: 60px;">考核方式</th>
+			<th class="Nsb_r_list_thb" style="width: 60px;">课程属性</th>
+			<th class="Nsb_r_list_thb" style="width: 120px;">课程性质</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>2015-2016-2</td>
+			<td align="left">J5510N0006</td>
+			<td align="left">线性代数</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162000928&zcj=60',700,500)">72</a></td>
+			
+			
+			<td>2</td>
+			<td>32</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2015-2016-2</td>
+			<td align="left">J5510N2001</td>
+			<td align="left">高等数学(Ⅰ)下</td>
+			
+			<td style=" color:red;"><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162022575&zcj=43.6',700,500)">75</a></td>
+			
+			
+			<td>5</td>
+			<td>80</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>3</td>
+			<td>2015-2016-2</td>
+			<td align="left">J5520N1002</td>
+			<td align="left">大学物理（Ⅱ）</td>
+			
+			<td style=" color:red;"><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162022628&zcj=33',700,500)">68</a></td>
+			
+			
+			<td>4</td>
+			<td>64</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>4</td>
+			<td>2015-2016-2</td>
+			<td align="left">J555SN0002</td>
+			<td align="left">大学物理实验（II）</td>
+			
+			<td style=" color:red;"><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162023695&zcj=不及格',700,500)">及格</a></td>
+			
+			
+			<td>1.5</td>
+			<td>48</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>5</td>
+			<td>2015-2016-2</td>
+			<td align="left">J6110G0001</td>
+			<td align="left">高级语言程序设计C++</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162004923&zcj=71',700,500)">88</a></td>
+			
+			
+			<td>4</td>
+			<td>64</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>6</td>
+			<td>2015-2016-2</td>
+			<td align="left">J611SG0001</td>
+			<td align="left">高级语言程序设计C++实验</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162010709&zcj=良好',700,500)">良好</a></td>
+			
+			
+			<td>1</td>
+			<td>32</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>7</td>
+			<td>2015-2016-2</td>
+			<td align="left">T1010Q0001</td>
+			<td align="left">大学生职业发展与就业指导</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162023987&zcj=71',700,500)">71</a></td>
+			
+			
+			<td>1</td>
+			<td>16</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>8</td>
+			<td>2015-2016-2</td>
+			<td align="left">T2010Q0001</td>
+			<td align="left">大学生心理健康指导</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162003421&zcj=82.6',700,500)">82.6</a></td>
+			
+			
+			<td>1</td>
+			<td>16</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>9</td>
+			<td>2015-2016-2</td>
+			<td align="left">T5130F2001</td>
+			<td align="left">大学英语（2）</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162021234&zcj=76',700,500)">81</a></td>
+			
+			
+			<td>3</td>
+			<td>48</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>10</td>
+			<td>2015-2016-2</td>
+			<td align="left">T5510Z0006</td>
+			<td align="left">数学文化</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162024528&zcj=90.4',700,500)">90.4</a></td>
+			
+			
+			<td>2</td>
+			<td>32</td>
+			<td>其它</td>
+			<td>选修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>11</td>
+			<td>2015-2016-2</td>
+			<td align="left">T5920Z0008</td>
+			<td align="left">机器人学概论</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162023563&zcj=及格',700,500)">及格</a></td>
+			
+			
+			<td>2</td>
+			<td>32</td>
+			<td>其它</td>
+			<td>选修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>12</td>
+			<td>2015-2016-2</td>
+			<td align="left">T6210J2001</td>
+			<td align="left">体育（2）</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162021465&zcj=67',700,500)">67</a></td>
+			
+			
+			<td>1</td>
+			<td>32</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>13</td>
+			<td>2015-2016-2</td>
+			<td align="left">T7210P0003</td>
+			<td align="left">思想道德修养与法律基础</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162001937&zcj=77.4',700,500)">77.4</a></td>
+			
+			
+			<td>3</td>
+			<td>48</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>14</td>
+			<td>2015-2016-2</td>
+			<td align="left">T7210P2006</td>
+			<td align="left">形势与政策（2）</td>
+			
+			<td style=" "><a href="javascript:JsMod('/jsxsd/kscj/pscj_list.do?xs0101id=024636C52C9B48CF989FC58D67E863C3&jx0404id=201520162003188&zcj=70',700,500)">70</a></td>
+			
+			
+			<td>0.5</td>
+			<td>8</td>
+			<td>考试</td>
+			<td>必修</td>
+			<td></td>
+		</tr>
+		
+		
+	</table>
+</div>
+<br />
+
+<div id="Footer1_divCopyright" class="Nsb_pw" style="display:;">
+  <div class="Nsb_rights">Copyright (C) 湖南强智科技发展有限公司 2003-2013 All Rights Reserved 湘ICP 备12010071号</div>
+</div>
+<script language="javascript">
+
+//合并学年学期列
+//jQuery("#dataList").rowspan(1);
+</script>
+</body>
+</html>
